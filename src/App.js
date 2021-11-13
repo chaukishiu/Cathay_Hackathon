@@ -7,6 +7,7 @@ import Login from './pages/Login';
 import BottomNavigation from 'reactjs-bottom-navigation'
 import 'reactjs-bottom-navigation/dist/index.css'
 import {HomeOutlined, SearchOutlined, BellOutlined, MenuOutlined}from '@ant-design/icons'
+import TopNavbar from './component/TopNavBar';
 
 function App() {
   const navigate = useNavigate()
@@ -45,6 +46,7 @@ function App() {
   ]
   return (
     <div>
+        <TopNavbar/>
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/search" element={<Search/>} />
