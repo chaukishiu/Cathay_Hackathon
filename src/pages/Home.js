@@ -1,10 +1,16 @@
 import React from 'react';
+import { HomeBannerContainer, HomeContainer, HomeTargetContainer } from '../component/Home/HomeComponent';
 
 const Home = (props) => {
 return (
-    <div>
-      Home
-    </div>
+    <HomeContainer>
+        <HomeBannerContainer>
+                Banner
+        </HomeBannerContainer>
+        <HomeTargetContainer>
+                Target
+        </HomeTargetContainer>
+    </HomeContainer>
   )
 };
 
