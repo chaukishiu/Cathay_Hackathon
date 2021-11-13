@@ -1,10 +1,12 @@
 import React from 'react';
+import {Container} from '../component/Container'
+
 
 const Login = (props) => {
 return (
-    <div>
-      Login
-    </div>
+    <Container>
+        To be finished!
+    </Container>
   )
 };
 

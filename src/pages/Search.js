@@ -1,10 +1,10 @@
 import React from 'react';
-
+import {Container} from '../component/Container'
 const Search = (props) => {
 return (
-    <div>
-      Search
-    </div>
+    <Container>
+        To be finished!
+    </Container>
   )
 };
 
