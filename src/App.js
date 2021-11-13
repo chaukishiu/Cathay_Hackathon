@@ -9,11 +9,12 @@ import 'reactjs-bottom-navigation/dist/index.css'
 import {HomeOutlined, SearchOutlined, BellOutlined, MenuOutlined}from '@ant-design/icons'
 
 function App() {
+  const navigate = useNavigate()
   const bottomNavItems = [
     {
       title: 'Home',
   
-      ref: '/home',
+      ref: '/',
 
       icon: <Link to="/"><HomeOutlined style={{ fontSize: '18px' }} /></Link>,
 
@@ -31,9 +32,9 @@ function App() {
     },
 
     {
-      title: 'Notifications',
+      title: 'login',
 
-      ref: '/notifications',
+      ref: '/login',
 
       icon: <Link to="/login"><BellOutlined style={{ fontSize: '18px' }} /></Link>,
 
@@ -44,7 +45,6 @@ function App() {
   ]
   return (
     <div>
-      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/search" element={<Search/>} />
@@ -53,9 +53,8 @@ function App() {
         <BottomNavigation
         items={bottomNavItems}
         defaultSelected={0}
-        onItemClick={(item) =>  console.log('hi')}
+        onItemClick={(item) =>  navigate(`${item.ref}`)}
       />
-      </BrowserRouter>
     </div>
   );
 }
