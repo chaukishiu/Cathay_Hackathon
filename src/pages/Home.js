@@ -16,7 +16,8 @@ return (
     <HomeContainer>
         <HomeBannerContainer>
         <HomeBannerH1>
-            Merry Christmas , Micheal ? <br/> Any Gift Hunting
+        Merry Christmas , Andrew! <br/>
+        Any Gift Searching Today?
         </HomeBannerH1>
         <HomeSearchInputContainer>
             <HomeSearchInputIcon>
